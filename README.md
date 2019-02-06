@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Idea Shop
 
-## Available Scripts
+>  Exploration of building an e-commerce application where you can build your ideas and dreams
 
-In the project directory, you can run:
+## Motivation
 
-### `npm start`
+Their are many various ways to build out projects and it would be a disservice to developers to say something like these are my opinions in the form of how I would build out an e-commerce like application.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+As an instructor--I'm always trying to mimic a workplace by using tooling and practices to teach students as quickly as possible.
+like a shopping cart for the first time.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The process in seeing something like a shopping cart built in a manner to start a discussion, and hopefully--the right discussion to talk about the necessary nuances of being an engineer and having an abstract idea of what the problem is
+that I'm actually trying to solve.
 
-### `npm test`
+***The Idea Shop***--where some ideas are born.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Getting Started
 
-### `npm run build`
+Clone (and fork if you'd like to contribute to) this repository to a directory on your computer. Navigate to that directory within your terminal and install your dependencies with either **NPM** or **YARN**
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+// Using NPM to install the dependencies
+npm install
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+// Using YARN to install the dependencies
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If the application starts up, it should open up a browser, and you should see (the first time and unmodified and working) `The Idea Shop` in a working form form.
 
-### `npm run eject`
+#### Run Tests (Optional)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm test
+yarn test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+/*
+ In the future, I'll use a new syntax (like (npm|yarn) [command])--when they share the same name like test.  For example, it would look like this below.
+*/
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+// The test command
+(npm|yarn) test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Requirements
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Roadmap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Put new features or things you'd like to see in the roadmap (submit via pull-request). Bring new features to the roadmap in a similar fashion.
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Needs
 
-### Analyzing the Bundle Size
+> The main difference between a need versus a want is simply exposure to difficult (like authentication, authorization, configurability, etc)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* Provide a way to hook up to other payment frameworks (stripe, paypal, venmo, etc)
+* Add additional providers for sending out emails
+* OAuth2 integration to social networks
+* Move API to its own repository and have it's own deployments
 
-### Making a Progressive Web App
+###### Admin Portal
+* Product Management
+* Order Management
+* User Management
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+###### Customer Portal
+* Order Management
+* Profile Management
+* Settings Management
 
-### Advanced Configuration
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Wants
 
-### Deployment
+> The ideas for this project to make it--in the future, better and have good discussions to do new said features.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+#### Featured Sections by Role
 
-### `npm run build` fails to minify
+###### Admin Portal
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Currency Management
+* Language Management
+* Coupon Management
+
+
