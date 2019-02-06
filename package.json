@@ -1,6 +1,6 @@
 {
   "name": "ideas-shop",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -14,10 +14,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:server": "npx graphql-faker --open --co",
+    "start:both": "npm run start:server && npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start:server": "npx graphql-faker --open --co"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
