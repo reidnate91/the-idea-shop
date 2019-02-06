@@ -1,0 +1,75 @@
+enum UserKind {
+  ADMIN
+  USER
+}
+
+
+type User {
+  id: ID! @fake(type: uuid)
+  kind: UserKind!
+  firstName: String @fake(type: firstName)
+  lastName: String @fake(type: lastName)
+  email: String! @fake(type: email)
+  
+  address: String @fake(type:streetAddress, options: { useFullAddress: true })
+  
+  orders: [Order]
+}
+
+type Product {
+  id: ID! @fake(type: uuid)
+  name: String! @fake(type: productName)
+  description: String @fake(type: lorem)
+  photoUrl: String! @fake(type: imageUrl)
+  price: String! @fake(type: money)
+  
+  orders: [Order!]!
+}
+
+enum OrderStatus {
+  PRE_PURCHASE
+  PURCHASED
+  RETURNED
+  SHIPPED
+  OTHER
+}
+
+type Order {
+  id: ID! @fake(type: uuid)
+  status: OrderStatus!
+  
+  billingAddress: String @fake(type:streetAddress, options: { useFullAddress: true })
+  shippingAddress: String @fake(type:streetAddress, options: { useFullAddress: true })
+  
+  
+  user: User!
+  items: [OrderLineItem!]!
+  
+  subTotal: String! @fake(type: money)
+  tax: String! @fake(type: money)
+  shipping: String! @fake(type: money)
+  total: String! @fake(type: money)
+}
+
+type OrderLineItem {
+  id: ID! @fake(type: uuid)
+  product: Product!
+  quantity: Int!
+  price: String! @fake(type: money)
+}
+
+
+
+# @examples(values: [9.99, 19.99, 59.99, 99.99])
+
+type Query { 
+  
+  user(id: ID): User
+  users: [User]
+  
+  products: [Product]
+  product(id: ID): User
+  
+  orders: [Order]
+  order(id: ID): Order
+}
