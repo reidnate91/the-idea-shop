@@ -68,7 +68,7 @@ type Query {
   users: [User]
   
   products: [Product]
-  product(id: ID): User
+  product(id: ID): Product
   
   orders: [Order]
   order(id: ID): Order

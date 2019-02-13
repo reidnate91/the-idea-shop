@@ -1,8 +1,18 @@
 import React from 'react'
+import Products from '../components/Products'
+import Product from '../components/Product'
 
 export const Home = () => (
   <>
     <h1>Home</h1>
+    <Products />
+  </>
+)
+
+export const ProductDetails = (props) => (
+  <>
+    <div><a href="/">Back</a></div>
+    <Product id={props.id} />
   </>
 )
 
