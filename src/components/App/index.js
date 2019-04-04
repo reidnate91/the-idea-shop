@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import { Normalize } from '@smooth-ui/core-sc'
 import styled from 'styled-components'
@@ -7,18 +6,12 @@ import { MdMenu } from 'react-icons/md'
 
 import RouterContent from '../Router'
 import RightNav from './RightNavigation'
-import {
-  DEFAULT_PADDING,
-  FOURTH_PADDING,
-  PRIMARY,
-  SECONDARY,
-  TERCIARY,
-  RED,
-} from '../../styles'
+import { DEFAULT_PADDING, FOURTH_PADDING, PRIMARY, SECONDARY, TERCIARY, RED } from '../../styles'
+
 
 const Main = styled.main`
   display: flex;
-    background: ${TERCIARY.alt300};
+  background: ${ TERCIARY.alt300 };
 `
 const Header = styled.header`
   display: flex;
