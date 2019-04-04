@@ -5,12 +5,14 @@ import {
   Home,
   NotFound,
   ProductDetails,
+  CheckOut
 } from '../../pages'
 
 export default () => (
   <Router>
     <Home path="/" />
     <ProductDetails path="/products/:id" />
-    <NotFound default/>
+    <CheckOut path="/checkout" />
+    <NotFound default />
   </Router>
 )

@@ -10,7 +10,12 @@ const client = new ApolloClient({
   uri: 'http://localhost:9002/graphql',
 })
 
-const Shell = () => <ApolloProvider client={client}><App /></ApolloProvider>
+const Shell = () => (
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>
+)
+
 
 ReactDOM.render(<Shell />, document.getElementById('root'))
 

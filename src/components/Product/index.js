@@ -7,20 +7,20 @@ const Product = styled.section`
   display: flex;
   flex-direction: column;
 
-  [name="price"] {
+  [name='price'] {
     font-size: 200%;
     padding: 0;
     margin: 0;
   }
-  
-  [name="product-title"] {
-      padding: 0;
-      font-size: 200%;
+
+  [name='product-title'] {
+    padding: 0;
+    font-size: 200%;
   }
-  
-  [name="photo"] {
+
+  [name='photo'] {
     padding: 16px;
-    
+
     img {
       width: 100%;
       height: 100%;
@@ -30,13 +30,12 @@ const Product = styled.section`
       min-height: 300px;
     }
   }
-  
-  [name="product-details"] {
+
+  [name='product-details'] {
     padding: 16px;
   }
-  
-  
-  [name="product-formatting"] {
+
+  [name='product-formatting'] {
     display: flex;
     flex-direction: row;
   }
@@ -60,9 +59,10 @@ const PRODUCT_QUERY = gql`
 export default ({ id }) => (
   <Query query={PRODUCT_QUERY} variables={{ id }}>
     {({ loading, error, data }) => {
-      if (loading) return (<div>Loading...</div>)
+      if (loading) return <div>Loading...</div>
       if (error) return <div>{error}</div>
       const { id, name, description, photoUrl, price } = data.product
+
       return (
         <Product key={id}>
           <h2 name="product-title">{name}</h2>

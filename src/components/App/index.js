@@ -18,7 +18,7 @@ import {
 
 const Main = styled.main`
   display: flex;
-  background: ${TERCIARY.alt300};
+    background: ${TERCIARY.alt300};
 `
 const Header = styled.header`
   display: flex;
