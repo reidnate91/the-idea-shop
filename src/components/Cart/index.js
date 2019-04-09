@@ -54,16 +54,7 @@ export default ({ items = [] }) => {
   const tax = itemsTotal * TAX
   const shipping = SHIPPING(itemsTotal)
   const total = itemsTotal + tax + shipping
-  //  const itemCount = items.map(item => item.name)
- 
-  // const fruitBasket = ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana', 'cherry', 'orange', 'fig' ];
-  // const count = fruitBasket.reduce( (tally, fruit) => {
-  //   tally[fruit] = (tally[fruit] || 0) + 1 ;
-  //   return tally;
-  // } , {})
-
-
-//  console.log(itemCount)
+  
 
 const itemsDisplay = Object.values(items.reduce((acc, cur) => {
     let count = `${cur.name}`;
@@ -75,43 +66,22 @@ const itemsDisplay = Object.values(items.reduce((acc, cur) => {
 
 
   
-// const count = items.map(item => item.name )
 
-// const count2 = items.reduce((acc, cur) => {
-  
-//   acc.name = (acc.name || 0) + 1
- 
-// return acc
 }, {} ))
 
 
-// .reduce((tally, cartItem) => {
 
-//   if (!tally[cartItem]) {
- 
-//   tally[cartItem] = 1;
- 
-//   } else {
- 
-//   tally[cartItem] = tally[cartItem] + 1;
- 
-//   }
- 
-//   return tally;
- 
-//  }, {});
  
  console.log(itemsDisplay)
 
- function removeItem (event) {
-    event.preventDefault()
-    
 
- }
  
  
 return (
     <>
+
+
+
     <table>
             <tbody>
              
@@ -119,13 +89,15 @@ return (
         return (
          
         <tr key={i}>
-        <td>{item.qty}</td>
+        
+       
             <td>{item.name}</td>
             
-            <td>{usd(item.price * item.qty)}</td>
+            <td>{usd(item.price )}</td>
+             <td>{item.qty}</td>
             {/* <td>{count}</td> */}
           
-          <td> <button onClick= 'removeItem()'>Delete </button> </td>
+          <td> <input type="number" onChange="quantityChange()"/> </td>
           </tr>
           
         )

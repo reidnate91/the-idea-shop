@@ -81,6 +81,12 @@ export default () => (
               <button type="button" onClick={e => addItemToCart(product)}>
                 Add
               </button>
+
+              {/* const quantCheck = display.name === item.name
+               ? this.add: this. alert "Already in Cart, add quantity in Cart" */}
+
+
+
             </ActionMenu>
           </Product>
         ))
