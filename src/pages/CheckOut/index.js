@@ -15,6 +15,7 @@ export const addItemToCart = item => {
   save([...items, item])
 }
 
+
 const save = items => {
   const raw = JSON.stringify(items)
   localStorage.setItem(CART_KEY, raw)
@@ -25,8 +26,10 @@ export default () => {
 
   return (
     <>
-      <h1>CheckOut</h1>
+      <h1>Cart</h1>
       <Cart items={items} />
+      <input name="checkout" type="submit" value="Check-out"/>
+      
     </>
   )
 }

@@ -7,7 +7,7 @@ import { MdMenu } from 'react-icons/md'
 import RouterContent from '../Router'
 import RightNav from './RightNavigation'
 import { DEFAULT_PADDING, FOURTH_PADDING, PRIMARY, SECONDARY, TERCIARY, RED } from '../../styles'
-
+import '../App.css'
 
 const Main = styled.main`
   display: flex;
@@ -112,7 +112,10 @@ export default () => {
       
       </Main>
       <Footer>
-        This is my footer..
+      <nav>
+        <a href="/">Home</a>
+        <a href="/checkout">Checkout</a>
+      </nav>
       </Footer>
     </>
   )

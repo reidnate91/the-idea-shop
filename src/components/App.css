@@ -1,0 +1,25 @@
+body {
+    text-align: left
+}
+
+[name="sub"]{
+    text-align: center
+}
+[name="tax"]{
+    text-align: center
+}
+[name="total"]{
+    text-align: center
+}
+[name="shipping"]{
+    text-align: center
+}
+
+
+td{
+padding: 0px 20px 
+
+}
+a {
+    padding: 0px 20px
+}
