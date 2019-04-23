@@ -12,7 +12,6 @@ const getCartItems = () => {
 
 export const addItemToCart = item => {
   const items = getCartItems()
-  if items.includes(item)
   save([...items, item])
 }
 
@@ -29,14 +28,14 @@ export default () => {
     <>
       <h1>Cart</h1>
       
-      <table>
-        <tbody>
+    
+       
         <th name="item">Items</th>
         <th>Price per Unit</th>
         <th>Quantity</th>
         <th>Total</th>
-        </tbody>
-        </table>
+      
+       
         <Cart items={items} />
             <input name="checkout" type="submit" value="Check-out"/>
 

@@ -89,7 +89,7 @@ export default () => {
       <Header>
         <Brand>The Idea Shop</Brand>
         <UserNavigation>
-          <UserName>Tyler Garlick</UserName>
+          <UserName>Nate Reid and Co.</UserName>
           {/*<nav>*/}
           {/*<a href="#">Orders</a>*/}
           {/*<a href="#">Profile</a>*/}
@@ -114,7 +114,7 @@ export default () => {
       <Footer>
       <nav>
         <a href="/">Home</a>
-        <a href="/checkout">Checkout</a>
+        <a href="/checkout">Cart</a>
       </nav>
       </Footer>
     </>

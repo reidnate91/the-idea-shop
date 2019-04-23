@@ -5,7 +5,7 @@ enum UserKind {
 
 
 type User {
-  id: ID! @fake(type: uuid)
+  id: ID! @id (type: uuid)
   kind: UserKind!
   firstName: String @fake(type: firstName)
   lastName: String @fake(type: lastName)

@@ -7,7 +7,8 @@ import App from './components/App'
 import * as serviceWorker from './serviceWorker'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:9002/graphql',
+   uri: ' https://eu1.prisma.sh/reidnate1991-822dab/idea-shop/idea-shop2',
+  // uri: 'http://localhost:9002/graphql',
 })
 
 const Shell = () => (

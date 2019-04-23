@@ -27,6 +27,6 @@ th{
     padding: 0px 40px;
     margin-right: 200px
 }
-[name="item"]{
-
+[name="number"]{
+    width: 3em
 }
